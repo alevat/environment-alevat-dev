@@ -1,0 +1,10 @@
+adminUser:
+  password: local:alevat/adminUser:password
+  username: admin
+enableDocker: false
+pipelineUser:
+  email: jenkins@alevat.com
+  token: local:alevat/pipelineUser:token
+  username: alevat-jenkins
+prow:
+  hmacToken: local:alevat/prow:hmacToken
