@@ -1,0 +1,13 @@
+dependencies:
+- host: github.com
+  owner: alevat
+  repo: builder-gradle-alevat
+  url: https://github.com/alevat/builder-gradle-alevat.git
+  version: ""
+  versionURL: ""
+- host: github.com
+  owner: alevat
+  repo: green-ui
+  url: https://github.com/alevat/green-ui.git
+  version: ""
+  versionURL: ""
