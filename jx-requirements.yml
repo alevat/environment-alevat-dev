@@ -3,6 +3,7 @@ autoUpdate:
   schedule: ""
 bootConfigURL: https://github.com/alevat/environment-alevat-dev
 cluster:
+  azure: {}
   clusterName: alevat
   environmentGitOwner: alevat
   gitKind: github
@@ -14,58 +15,58 @@ cluster:
   registry: gcr.io
   zone: us-east4
 environments:
-- ingress:
-    domain: 35.186.175.175.nip.io
-    externalDNS: false
-    namespaceSubDomain: -jx.
-    tls:
-      email: ""
-      enabled: false
-      production: false
-  key: dev
-- ingress:
-    domain: ""
-    externalDNS: false
-    namespaceSubDomain: ""
-    tls:
-      email: ""
-      enabled: false
-      production: false
-  key: staging
-- ingress:
-    domain: ""
-    externalDNS: false
-    namespaceSubDomain: ""
-    tls:
-      email: ""
-      enabled: false
-      production: false
-  key: production
+  - ingress:
+      domain: k8s.alevat.com
+      externalDNS: true
+      namespaceSubDomain: -dev.
+      tls:
+        email: etavela@alevat.com
+        enabled: true
+        production: true
+    key: dev
+  - ingress:
+      domain: k8s.alevat.com
+      externalDNS: true
+      namespaceSubDomain: -stage.
+      tls:
+        email: etavela@alevat.com
+        enabled: true
+        production: true
+    key: staging
+  - ingress:
+      domain: k8s.alevat.com
+      externalDNS: true
+      namespaceSubDomain: ""
+      tls:
+        email: etavela@alevat.com
+        enabled: true
+        production: true
+    key: production
 gitops: true
 ingress:
-  domain: 35.186.175.175.nip.io
-  externalDNS: false
+  domain: k8s.alevat.com
+  externalDNS: true
   namespaceSubDomain: -jx.
   tls:
-    email: ""
-    enabled: false
-    production: false
+    email: etavela@alevat.com
+    enabled: true
+    production: true
 kaniko: true
 repository: nexus
-secretStorage: local
+secretStorage: vault
 storage:
   backup:
-    enabled: false
-    url: ""
+    enabled: true
+    url: gs://alevat-jx-backup
   logs:
-    enabled: false
-    url: ""
+    enabled: true
+    url: gs://alevat-jx-logs
   reports:
-    enabled: false
-    url: ""
+    enabled: true
+    url: gs://alevat-jx-reports
   repository:
-    enabled: false
-    url: ""
+    enabled: true
+    url: gs://alevat-jx-repository
 vault: {}
 velero: {}
 versionStream:
