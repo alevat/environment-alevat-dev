@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: alevat
+    provider: github
+    repository: green-service
+  name: alevat-green-service
+spec:
+  description: Imported application for alevat/green-service
+  httpCloneURL: https://github.com/alevat/green-service.git
+  org: alevat
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: green-service
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/alevat/green-service.git
