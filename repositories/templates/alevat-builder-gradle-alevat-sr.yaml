@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: alevat
+    provider: github
+    repository: builder-gradle-alevat
+  name: alevat-builder-gradle-alevat
+spec:
+  description: Imported application for alevat/builder-gradle-alevat
+  httpCloneURL: https://github.com/alevat/builder-gradle-alevat.git
+  org: alevat
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: builder-gradle-alevat
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/alevat/builder-gradle-alevat.git

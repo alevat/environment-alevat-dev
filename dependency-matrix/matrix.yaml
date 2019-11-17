@@ -1,0 +1,7 @@
+dependencies:
+- host: github.com
+  owner: alevat
+  repo: builder-gradle-alevat
+  url: https://github.com/alevat/builder-gradle-alevat.git
+  version: ""
+  versionURL: ""
