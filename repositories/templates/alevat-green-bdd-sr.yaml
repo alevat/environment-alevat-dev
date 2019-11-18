@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: alevat
+    provider: github
+    repository: green-bdd
+  name: alevat-green-bdd
+spec:
+  description: Imported application for alevat/green-bdd
+  httpCloneURL: https://github.com/alevat/green-bdd.git
+  org: alevat
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: green-bdd
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/alevat/green-bdd.git
