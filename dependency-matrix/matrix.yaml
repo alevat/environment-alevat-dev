@@ -23,3 +23,9 @@ dependencies:
   url: https://github.com/alevat/green-bdd.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: alevat
+  repo: bdd-base
+  url: https://github.com/alevat/bdd-base.git
+  version: ""
+  versionURL: ""
